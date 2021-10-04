@@ -1,0 +1,12 @@
+epochs: 400
+init: 'zeros' #zeros, lw,fbp
+noise: True
+n_iteration: 6
+std_noise: 0.2
+lr: 0.00005
+save: False
+lw_iter: 30
+cyc_loss_coeff: 1
+mse_coeff: 0.5
+adv_loss_coeff: 1
+batch: 8
