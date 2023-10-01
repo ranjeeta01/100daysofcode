@@ -1,0 +1,17 @@
+class Solution {
+public:
+    vector<string> cellsInRange(string s) {
+        int n = s.length();
+        int r = s[1] - '0';
+        int c = s[4] - '0';
+        vector<string> res; 
+        for (char a = s[0]; a<=s[3]; a++){
+            for (int j=r; j<=c; j++){
+                string tmp = a + to_string(j);
+                //cout<<j<<" "<<to_string(j)<<"\n";
+                res.push_back(tmp);
+            }
+        } 
+        return res;  
+    }
+};
